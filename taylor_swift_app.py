@@ -58,8 +58,13 @@ if not st.session_state.logged_in or is_session_expired():
     login()
     st.stop()
 
-# Load dataset
-df = pd.read_csv(r"C:\Users\abhis\Downloads\songs_cleaned.csv")
+
+# Get the absolute path to the CSV file within the project folder
+csv_file = os.path.join(os.path.dirname(__file__), "songs_cleaned.csv")
+
+# Load the dataset
+df = pd.read_csv(csv_file)
+
 
 # Load saved TF-IDF model and vectorizer
 with open("tfidf_model.pkl", "rb") as model_file:
