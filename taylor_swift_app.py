@@ -75,40 +75,39 @@ with open("tfidf_vectorizer.pkl", "rb") as vectorizer_file:
 
 # Manually mapped album cover paths
 album_covers = {
-    "1989 (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/1989%20(Taylor's%20Version).png"  ,
-    "Beautiful Eyes": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Beautiful%20Eyes.png",
-    "Evermore": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Evermore.png",
-    "Fearless (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Fearless%20(Taylor's%20Version).png",
-    "folklore": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/folklore.jpg",
-    "Lover": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Lover.jpg",
-    "Midnights": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Midnights.png",
-    "Red (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Red%20(Taylor's%20Version).jpg",
-    "reputation": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/reputation.png",
-    "Speak Now (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Speak%20Now%20(Taylor's%20Version).png",
-    "Taylor Swift": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Taylor%20Swift.png",
-    "The Tortured Poets Department": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/The%20Tortured%20Poets%20Department.jpg",
-    "The Hunger Games": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/artworks-000058368652-o8bupy-t500x500.jpg",
-    "How Long Do You Think It's Gonna Last": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/How_Long_Do_You_Think_It's_Gonna_Last_by_Big_Red_Machine.png",
-    "Cats": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/images%20(1).jpg",
-    "Where The Crawdads Sing": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Where_the_Crawdads_Sing_(film).jpg",
-    "Christmas Tree Farm": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/images%20(2).jpg",
-    "Fifty Shades Darker": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/MV5BMTQ5NTk0Njg2N15BMl5BanBnXkFtZTgwNzk5Nzk3MDI@._V1_.jpg",
+    "1989 (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/1989%20(Taylor's%20Version).png"  ,
+    "Beautiful Eyes": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Beautiful%20Eyes.png",
+    "Evermore": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Evermore.png",
+    "Fearless (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Fearless%20(Taylor's%20Version).png",
+    "folklore": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/folklore.jpg",
+    "Lover": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Lover.jpg",
+    "Midnights": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Midnights.png",
+    "Red (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Red%20(Taylor's%20Version).jpg",
+    "reputation": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/reputation.png",
+    "Speak Now (Taylor's Version)": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Speak%20Now%20(Taylor's%20Version).png",
+    "Taylor Swift": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Taylor%20Swift.png",
+    "The Tortured Poets Department": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/The%20Tortured%20Poets%20Department.jpg",
+    "The Hunger Games": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/artworks-000058368652-o8bupy-t500x500.jpg",
+    "How Long Do You Think It's Gonna Last": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/How_Long_Do_You_Think_It's_Gonna_Last_by_Big_Red_Machine.png",
+    "Cats": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/images%20(1).jpg",
+    "Where The Crawdads Sing": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Where_the_Crawdads_Sing_(film).jpg",
+    "Christmas Tree Farm": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/images%20(2).jpg",
+    "Fifty Shades Darker": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/MV5BMTQ5NTk0Njg2N15BMl5BanBnXkFtZTgwNzk5Nzk3MDI@._V1_.jpg",
     "Miss Americana": r"https://raw.raw.githubusercontent.com/Abhishikt07/TaylorSwftLyricsSearch./refs/heads/main/album%20cover/AAAABRheY2bI3qqsOiRPUNuvGPgPEkXSFdWt1cH7v1VT4Icogjx4HAnPCHA0C8Of2YxTjH3CfJwX8Irrl1qzbP4JHh3jRjypMFQv9hOcs1gSha4yWOgveqxyw5U8LnGz1fmVDM1X%20(2).webp",
-    "Love Drunk": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/ab67616d0000b273597e14bb684692973a0843ba.jpg",
-    "Women in Music Part III": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Haim_-_Women_in_Music_Pt._III.png",
-    "Two Lanes of Freedom": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Twolanes.jpg",
-    "The Hannah Montana Movie": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/Hannah-montana-movie-poster.jpg",
-    "The Taylor Swift Holiday Collection": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/images.jpg"
+    "Love Drunk": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/ab67616d0000b273597e14bb684692973a0843ba.jpg",
+    "Women in Music Part III": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Haim_-_Women_in_Music_Pt._III.png",
+    "Two Lanes of Freedom": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Twolanes.jpg",
+    "The Hannah Montana Movie": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/Hannah-montana-movie-poster.jpg",
+    "The Taylor Swift Holiday Collection": r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/images.jpg"
 }
 
 def get_album_cover(album_name):
     album_image_path = album_covers.get(album_name)
 
-    # If album cover exists in dictionary, return it; otherwise, return default black background
-    if album_image_path:
+    if album_image_path:  # If image URL exists, return it
         return album_image_path
-    else:
-        return r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/blob/main/album%20cover/background-gradient-black-overlay-abstract-background-black-night-dark-evening-with-space-for-text-for-a-background-free-photo.jpg"  # Default black background
+    
+    return r"https://raw.github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/background-gradient-black-overlay-abstract-background-black-night-dark-evening-with-space-for-text-for-a-background-free-photo.jpg"  # Default black background
 
 
 # Function to search songs
