@@ -102,7 +102,13 @@ album_covers = {
 }
 
 def get_album_cover(album_name):
-    return album_covers.get(album_name, "https://via.placeholder.com/250x250/000000/FFFFFF?text=No+Image")  
+    album_image_path = album_covers.get(album_name)
+
+    if album_image_path:  # If image URL exists, return it
+        return album_image_path
+    
+    return album_covers.get(album_name, "https://via.placeholder.com/250x250/000000/FFFFFF?text=No+Image")
+
 
 
 # Function to search songs
