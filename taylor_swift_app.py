@@ -108,6 +108,7 @@ def get_album_cover(album_name):
     else:
         return r"C:\Users\abhis\Pictures\album cover\black_background.png"  # Default black background
 
+
 # Function to search songs
 def search_song(query, top_n=5):
     query_vector = vectorizer.transform([query])  
@@ -173,3 +174,8 @@ if query:
             st.text_area("Lyrics:", song_details['lyrics'], height=400)
     else:
         st.warning("No matching songs found!")
+
+if 'album_cover_path' in locals():
+    st.write(f"Image Path: {album_cover_path}")
+else:
+    st.write("Image Path: Not available (No song selected or query is empty)")
