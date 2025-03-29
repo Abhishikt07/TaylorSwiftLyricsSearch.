@@ -102,12 +102,7 @@ album_covers = {
 }
 
 def get_album_cover(album_name):
-    album_image_path = album_covers.get(album_name)
-
-    if album_image_path:  # If image URL exists, return it
-        return album_image_ path
-    
-    return r"https://github.com/Abhishikt07/TaylorSwiftLyricsSearch/album%20cover/background-gradient-black-overlay-abstract-background-black-night-dark-evening-with-space-for-text-for-a-background-free-photo.jpg"  # Default black background
+    return album_covers.get(album_name, "https://via.placeholder.com/250x250/000000/FFFFFF?text=No+Image")  
 
 
 # Function to search songs
